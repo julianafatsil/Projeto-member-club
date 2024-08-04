@@ -2,3 +2,30 @@
   margin: 0;
   padding: 0;
 }
+
+root: {
+  --main-pink: #D658B3;
+  --main-green: #45B442;
+  --base-gray-100: #F4F1F2;
+  --base-gray-200: #E9E7E9;
+  --base-gray-300: #DFDCDF;
+  --base-gray-400: #D3CFD2;
+  --base-gray-500: #756C71;
+  --base-gray-600: #4A4448;
+  --base-gray-700: #332B31;
+  --base-write: #FFFFFF;
+  --gradient-base: linear-gradient(90deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%);
+
+  --font-family: "Oxygen", sans-serif;
+  --title-md: bold 24px/140% var(--font-family);
+  --title-sm: bold 18px/140% var(--font-family);
+  --sub-title-md: bold 14px/140% var(--font-family);
+  --sub-title-sm: bold 12px/140% var(--font-family);
+  --text-md: 16px/140% var(--font-family);
+  --text-sm: 14px/140% var(--font-family);
+  --text-xs: 12px/140% var(--font-family);
+}
+
+.sutitleUppercase {
+  text-trasnform: upercase
+}
