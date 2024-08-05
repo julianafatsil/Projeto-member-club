@@ -37,4 +37,20 @@ function createDataClient(data){
   divPerfilClient.appendChild(divInfoClient);
 
   main.appendChild(divPerfilClient);
+
+  const divHistoryClient = document.createElement("div");
+  divHistoryClient.className = "history-client";
+  const divHistoryClientSubtitle = document.createElement("div");
+  divHistoryClientSubtitle.className = "history-client-subtitle";
+  const spanHistoryClientsubtitle = document.createElement("span");
+  spanHistoryClientsubtitle.className = "subtitle-sm";
+  spanHistoryClientsubtitle.innerText = "histórico";
+  const spanHistoryClientCortes = document.createElement("span");
+  spanHistoryClientCortes.className = "text-xs";
+  spanHistoryClientCortes.innerText = `${data.loyaltyCard.totalCuts} cortes`;
+  divHistoryClientSubtitle.appendChild(spanHistoryClientsubtitle);
+  divHistoryClientSubtitle.appendChild(spanHistoryClientCortes);
+  divHistoryClient.appendChild(divHistoryClientSubtitle);
+
+  main.appendChild(divHistoryClient);
 }
